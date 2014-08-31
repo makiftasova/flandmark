@@ -181,7 +181,7 @@
 			int *temp_bbox;
 			this->rectToBbox(this->bbox, &temp_bbox);
 
-			cv::rectangle(this->image, cv::Point(temp_bbox[0], temp_bbox[1]), cv::Point(temp_bbox[2], temp_bbox[3]), CV_RGB(0,0,255) );
+			//cv::rectangle(this->image, cv::Point(temp_bbox[0], temp_bbox[1]), cv::Point(temp_bbox[2], temp_bbox[3]), CV_RGB(0,0,255) );
 
 			flandmark_detect(grayIplImage, temp_bbox, this->flandmarkModel, this->landmarks);
 
